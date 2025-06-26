@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Files\\GameDev\\DodgeTheBlocks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\DodgeTheBlocks\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\DodgeTheBlocks\\assets\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\DodgeTheBlocks\\assets\\blockspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\blockspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\DodgeTheBlocks\\assets\\killzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\killzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|d:\\files\\gamedev\\dodgetheblocks\\assets\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager.cs",
+              "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\GameManager.cs",
+              "RelativeToolTip": "Assets\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T07:00:09.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Block.cs",
+              "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\Block.cs",
+              "RelativeDocumentMoniker": "Assets\\Block.cs",
+              "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\Block.cs",
+              "RelativeToolTip": "Assets\\Block.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T06:53:07.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlockSpawner.cs",
+              "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\BlockSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\BlockSpawner.cs",
+              "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\BlockSpawner.cs",
+              "RelativeToolTip": "Assets\\BlockSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T06:51:24.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KillZone.cs",
+              "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\KillZone.cs",
+              "RelativeDocumentMoniker": "Assets\\KillZone.cs",
+              "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\KillZone.cs",
+              "RelativeToolTip": "Assets\\KillZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T05:30:33.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Movement.cs",
+              "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\Movement.cs",
+              "RelativeToolTip": "Assets\\Movement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T05:28:58.688Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

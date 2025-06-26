@@ -24,4 +24,9 @@ public class Block : MonoBehaviour
 
         Destroy(gameObject); // Destroy block immediately after it leaves screen
     }
+    void Update()
+    {
+        transform.Translate(Vector2.down * GameManager.instance.blockFallSpeed * Time.deltaTime);
+    }
 }
+ 

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6459767806903708588}
   - component: {fileID: 8735749274628363755}
   - component: {fileID: 2120330266536101806}
-  - component: {fileID: 2453757968504813332}
   - component: {fileID: 5363930437503507775}
   m_Layer: 0
   m_Name: Block
@@ -160,22 +159,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2453757968504813332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5343779442911482370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8483d6de897ffa94e9e7ee6f45b42a68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blockPrefab: {fileID: 0}
-  spawnInterval: 1
-  spawnRangeX: 8
-  top: 10
 --- !u!114 &5363930437503507775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,3 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4b59d622cf15a4287a89c715d05579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasHitPlayer: 0
