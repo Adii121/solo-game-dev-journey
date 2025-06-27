@@ -1,36 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float maxStamina = 20f;
-    public float currentStamina = 10f;
-    public float moveUsed = 0f;
     public float moveSpeed = 5f;
+    public float laneDistance = 2f;
+
+    private int currentLane = 1; // 0 = Left, 1 = Center, 2 = Right
+    private Vector3[] lanes;
+
+    void Start()
+    {
+        // Set up lanes based on position
+        lanes = new Vector3[]
+        {
+            new Vector3(-laneDistance, transform.position.y, 0),
+            new Vector3(0, transform.position.y, 0),
+            new Vector3(laneDistance, transform.position.y, 0)
+        };
+        transform.position = lanes[currentLane];
+    }
 
     void Update()
     {
-        float inputX = Input.GetAxisRaw("Horizontal");
-        float movement = inputX * moveSpeed * Time.deltaTime;
-
-        if (Mathf.Abs(movement) <= currentStamina)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && currentLane > 0)
         {
-            transform.Translate(movement, 0, 0);
-            currentStamina -= Mathf.Abs(movement);
+            currentLane--;
+            transform.position = lanes[currentLane];
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && currentLane < 2)
+        {
+            currentLane++;
+            transform.position = lanes[currentLane];
         }
     }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Block")
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
             GameManager.instance.GameOver();
         }
     }
-    public void GainMovement(float amount)
-    {
-        currentStamina = Mathf.Min(currentStamina + amount, maxStamina);
-    }
-
 }
-

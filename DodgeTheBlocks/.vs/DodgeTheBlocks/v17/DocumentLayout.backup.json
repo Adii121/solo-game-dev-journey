@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Files\\GameDev\\DodgeTheBlocks\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|d:\\files\\gamedev\\dodgetheblocks\\assets\\rickshawspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\rickshawspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\DodgeTheBlocks\\assets\\rickshaw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\rickshaw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\DodgeTheBlocks\\assets\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|d:\\files\\gamedev\\dodgetheblocks\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\DodgeTheBlocks\\assets\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\DodgeTheBlocks\\assets\\blockspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\blockspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\DodgeTheBlocks\\assets\\killzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\killzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\DodgeTheBlocks\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9392D0C-F180-708B-7E89-E5B5F6D9DB8A}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,66 +30,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Rickshaw.cs",
+              "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\Rickshaw.cs",
+              "RelativeDocumentMoniker": "Assets\\Rickshaw.cs",
+              "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\Rickshaw.cs",
+              "RelativeToolTip": "Assets\\Rickshaw.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T07:09:09.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RickshawSpawner.cs",
+              "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\RickshawSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\RickshawSpawner.cs",
+              "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\RickshawSpawner.cs",
+              "RelativeToolTip": "Assets\\RickshawSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T06:43:45.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\GameManager.cs",
               "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\GameManager.cs",
               "RelativeToolTip": "Assets\\GameManager.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC0AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T07:00:09.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Block.cs",
-              "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\Block.cs",
-              "RelativeDocumentMoniker": "Assets\\Block.cs",
-              "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\Block.cs",
-              "RelativeToolTip": "Assets\\Block.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T06:53:07.002Z"
+              "WhenOpened": "2025-06-26T07:00:09.4Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BlockSpawner.cs",
-              "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\BlockSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\BlockSpawner.cs",
-              "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\BlockSpawner.cs",
-              "RelativeToolTip": "Assets\\BlockSpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T06:51:24.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "KillZone.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\KillZone.cs",
               "RelativeDocumentMoniker": "Assets\\KillZone.cs",
               "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\KillZone.cs",
               "RelativeToolTip": "Assets\\KillZone.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T05:30:33.043Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Movement.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Movement.cs",
               "ToolTip": "D:\\Files\\GameDev\\DodgeTheBlocks\\Assets\\Movement.cs",
               "RelativeToolTip": "Assets\\Movement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T05:28:58.688Z",
               "EditorCaption": ""
