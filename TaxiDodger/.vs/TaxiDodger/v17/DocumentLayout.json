@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Files\\GameDev\\TaxiDodger\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|d:\\files\\gamedev\\taxidodger\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|d:\\files\\gamedev\\taxidodger\\assets\\scripts\\game\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|d:\\files\\gamedev\\taxidodger\\assets\\rickshawspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\rickshawspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Files\\GameDev\\TaxiDodger\\Assets\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|d:\\files\\gamedev\\taxidodger\\assets\\rickshaw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\rickshaw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Files\\GameDev\\TaxiDodger\\Assets\\Rickshaw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Rickshaw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Files\\GameDev\\TaxiDodger\\Assets\\RickshawSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\RickshawSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\Game\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\MainMenu.cs",
+              "ToolTip": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\Game\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T13:26:32.005Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -34,12 +51,11 @@
               "RelativeToolTip": "Assets\\Rickshaw.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T06:02:10.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T06:02:10.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "RickshawSpawner.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\RickshawSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\RickshawSpawner.cs",
@@ -47,21 +63,18 @@
               "RelativeToolTip": "Assets\\RickshawSpawner.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T05:55:31.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T05:55:31.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\GameManager.cs",
               "ToolTip": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\GameManager.cs",
               "RelativeToolTip": "Assets\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T05:46:55.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T05:46:55.707Z"
             }
           ]
         }
