@@ -4,6 +4,7 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float laneDistance = 2f;
+    public PlayerStamina playerStamina;
 
     private int currentLane = 1; // 0 = Left, 1 = Center, 2 = Right
     private Vector3[] lanes;
@@ -18,6 +19,8 @@ public class Movement : MonoBehaviour
             new Vector3(laneDistance, transform.position.y, 0)
         };
         transform.position = lanes[currentLane];
+
+        playerStamina = GetComponent<PlayerStamina>();
     }
 
     void Update()
@@ -26,11 +29,13 @@ public class Movement : MonoBehaviour
         {
             currentLane--;
             transform.position = lanes[currentLane];
+            playerStamina.DrainStamina(1); // drains stamina
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow) && currentLane < 2)
         {
             currentLane++;
             transform.position = lanes[currentLane];
+            playerStamina.DrainStamina(1); // drains stamina
         }
     }
 
@@ -39,6 +44,13 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             GameManager.instance.GameOver();
+        }
+    }
+    public void OnDodge()
+    {
+        if (playerStamina != null)
+        {
+            playerStamina.RestoreStamina(1f); // Restore 5 stamina on dodge
         }
     }
 }
