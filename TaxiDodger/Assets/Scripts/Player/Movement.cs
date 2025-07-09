@@ -25,13 +25,13 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && currentLane > 0)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && currentLane > 0 && playerStamina.currentStamina > 1)
         {
             currentLane--;
             transform.position = lanes[currentLane];
             playerStamina.DrainStamina(1); // drains stamina
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow) && currentLane < 2)
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && currentLane < 2 && playerStamina.currentStamina > 1)
         {
             currentLane++;
             transform.position = lanes[currentLane];

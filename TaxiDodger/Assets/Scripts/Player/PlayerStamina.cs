@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class PlayerStamina : MonoBehaviour
 {
-    public float maxStamina = 5f;    // Maximum stamina
-    public float currentStamina;    // Current stamina
-    public Image staminaBarFill;  // Reference to UI fill image
+    public float maxStamina = 5f;       // Maximum stamina
+    public float currentStamina;        // Current stamina
+    public Image staminaBarFill;        // Reference to UI fill image
+    public bool isInfinite = false;
 
     void Start()
     {
@@ -13,17 +15,10 @@ public class PlayerStamina : MonoBehaviour
         UpdateStaminaUI();
     }
 
-    void Update()
-    {
-        // Example: Drain stamina on movement
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
-        {
-            DrainStamina(Time.deltaTime * 2f);
-        }
-    }
-
     public void DrainStamina(float amount)
     {
+        if (isInfinite) return; // Don’t drain if infinite
+
         currentStamina -= amount;
         currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
         UpdateStaminaUI();
@@ -40,7 +35,23 @@ public class PlayerStamina : MonoBehaviour
     {
         if (staminaBarFill != null)
         {
-            staminaBarFill.fillAmount = (float)currentStamina / maxStamina;
+            staminaBarFill.fillAmount = currentStamina / maxStamina;
         }
     }
+    public IEnumerator InfiniteStamina(float duration)
+    {
+        isInfinite = true; // Enable infinite mode
+        float timer = 0f;
+
+        while (timer < duration)
+        {
+            currentStamina = maxStamina; // Keep refilling
+            UpdateStaminaUI();
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        isInfinite = false; // Back to normal
+    }
+
 }
