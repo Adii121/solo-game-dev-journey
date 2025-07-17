@@ -46,8 +46,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        int highScore = PlayerPrefs.GetInt("HighScore", 0);
-        if (score > highScore)
+        if (score > PlayerPrefs.GetInt("HighScore", 0))
         {
             PlayerPrefs.SetInt("HighScore", score);
         }
@@ -61,6 +60,12 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("GameScene");
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
     }
     public IEnumerator CameraShake(float duration, float magnitude)
     {

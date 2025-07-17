@@ -3,6 +3,8 @@ using UnityEngine;
 public class InfiniteStamina : MonoBehaviour
 {
     public float duration = 5f; // Duration of effect
+    public GameObject pickupEffect;
+    public AudioClip pickupSound;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,6 +14,8 @@ public class InfiniteStamina : MonoBehaviour
 
             if (playerStamina != null)
             {
+                Instantiate(pickupEffect, transform.position, Quaternion.identity);
+                AudioSource.PlayClipAtPoint(pickupSound, transform.position);
                 // Start infinite stamina
                 playerStamina.StartCoroutine(playerStamina.InfiniteStamina(duration));
             }

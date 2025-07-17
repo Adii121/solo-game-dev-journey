@@ -6,6 +6,8 @@ public class SpeedPowerUp : MonoBehaviour
 {
     public float speedDecrease = 2f;
     public float staminaCost = 3f;  // Cost to activate
+    public GameObject pickupEffect;
+    public AudioClip pickupSound;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,6 +16,8 @@ public class SpeedPowerUp : MonoBehaviour
             PlayerStamina playerStamina = other.GetComponent<PlayerStamina>();
             if (playerStamina != null && playerStamina.currentStamina >= staminaCost)
             {
+                Instantiate(pickupEffect, transform.position, Quaternion.identity);
+                AudioSource.PlayClipAtPoint(pickupSound, transform.position);
                 // Spend stamina
                 playerStamina.DrainStamina(staminaCost);
 

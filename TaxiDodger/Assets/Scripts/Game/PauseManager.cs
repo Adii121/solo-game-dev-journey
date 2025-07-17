@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenuCanvas;
+    public GameObject pausePanel;
+    public GameObject settingsPanel;
+
     private bool isPaused = false;
 
     void Update()
@@ -35,5 +38,15 @@ public class PauseManager : MonoBehaviour
     {
         Time.timeScale = 1f; // Reset time
         SceneManager.LoadScene("MainMenu"); // Change this to your menu scene name
+    }
+    public void OpenSettings()
+    {
+        pausePanel.SetActive(false);   // Disable pause buttons
+        settingsPanel.SetActive(true); // Show settings panel
+    }
+    public void CloseSettings()
+    {
+        settingsPanel.SetActive(false); // Hide settings panel
+        pausePanel.SetActive(true);     // Bring back pause buttons
     }
 }
