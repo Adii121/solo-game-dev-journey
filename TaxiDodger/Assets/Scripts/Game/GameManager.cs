@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -52,8 +51,16 @@ public class GameManager : MonoBehaviour
         }
 
         Time.timeScale = 0; 
-        StartCoroutine(CameraShake(0.1f, 0.1f));
         gameOverPanel.SetActive(true);
+        GameObject bgMusic = GameObject.FindGameObjectWithTag("BackgroundMusic");
+        if (bgMusic != null)
+        {
+            AudioSource audio = bgMusic.GetComponent<AudioSource>();
+            if (audio.isPlaying)
+            {
+                audio.Stop();
+            }
+        }
     }
 
     public void RestartGame()
@@ -66,25 +73,5 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
-    }
-    public IEnumerator CameraShake(float duration, float magnitude)
-    {
-        Vector3 originalPos = Camera.main.transform.localPosition;
-
-        float elapsed = 0.0f;
-
-        while (elapsed < duration)
-        {
-            float x = Random.Range(-1f, 1f) * magnitude;
-            float y = Random.Range(-1f, 1f) * magnitude;
-
-            Camera.main.transform.localPosition = new Vector3(x, y, originalPos.z);
-
-            elapsed += Time.deltaTime;
-
-            yield return null;
-        }
-
-        Camera.main.transform.localPosition = originalPos;
     }
 }

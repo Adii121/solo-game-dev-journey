@@ -9,6 +9,13 @@ public class PauseManager : MonoBehaviour
 
     private bool isPaused = false;
 
+    private GameObject bgMusic; // Class-level variable
+
+    private void Start()
+    {
+        bgMusic = GameObject.FindGameObjectWithTag("BackgroundMusic");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
@@ -25,6 +32,14 @@ public class PauseManager : MonoBehaviour
         pauseMenuCanvas.SetActive(true);
         Time.timeScale = 0f; // Freeze the game
         isPaused = true;
+        if (bgMusic != null)
+        {
+            AudioSource audio = bgMusic.GetComponent<AudioSource>();
+            if (audio.isPlaying)
+            {
+                audio.Pause();
+            }
+        }
     }
 
     public void ResumeGame()
@@ -32,6 +47,14 @@ public class PauseManager : MonoBehaviour
         pauseMenuCanvas.SetActive(false);
         Time.timeScale = 1f; // Resume the game
         isPaused = false;
+        if (bgMusic != null)
+        {
+            AudioSource audio = bgMusic.GetComponent<AudioSource>();
+            if (!audio.isPlaying)
+            {
+                audio.UnPause();
+            }
+        }
     }
 
     public void LoadMainMenu()

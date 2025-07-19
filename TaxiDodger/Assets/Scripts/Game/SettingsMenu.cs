@@ -39,4 +39,5 @@ public class SettingsMenu : MonoBehaviour
         // Save volume for future sessions
         PlayerPrefs.SetFloat("MasterVolume", volume);
     }
+
 }

@@ -185,6 +185,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedDecrease: 2
-  staminaCost: 3
+  staminaCost: 5
   pickupEffect: {fileID: 5705349700557873378, guid: 7cfb34acf27b7a64dbba80e78f13ac73, type: 3}
   pickupSound: {fileID: 8300000, guid: d7a6c464725264344a97219dd34e5974, type: 3}

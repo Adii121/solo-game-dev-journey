@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Movement : MonoBehaviour
 {
@@ -11,9 +12,11 @@ public class Movement : MonoBehaviour
 
     private int currentLane = 1; // 0 = Left, 1 = Center, 2 = Right
     private Vector3[] lanes;
+    private AudioSource audioSource;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         // Set up lanes based on position
         lanes = new Vector3[]
         {
@@ -48,16 +51,57 @@ public class Movement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            GameManager.instance.GameOver();
+            PlayerShield shield = GetComponent<PlayerShield>(); 
+            if (shield != null && shield.IsShieldActive())
+            {
+                shield.DeactivateShield(); // Consume shield
+                Debug.Log("Shield saved you!");
+                return; // Don’t trigger GameOver
+            }
+            PlayCrashSound();
+            StartCoroutine(CameraShake(0.2f, 0.2f));
+            Instantiate(dodgeEffectPrefab, transform.position, Quaternion.identity);
+            Invoke(nameof(CallGameOver), 0.8f);
         }
     }
     public void OnDodge()
     {
-        Instantiate(dodgeEffectPrefab, transform.position, Quaternion.identity);
         AudioSource.PlayClipAtPoint(dodgeSound, transform.position);
         if (playerStamina != null)
         {
             playerStamina.RestoreStamina(1f); // Restore 5 stamina on dodge
         }
+    }
+
+    void PlayCrashSound()
+    {
+        if (audioSource != null && !audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+    }
+    void CallGameOver()
+    {
+        GameManager.instance.GameOver();
+    }
+    public IEnumerator CameraShake(float duration, float magnitude)
+    {
+        Vector3 originalPos = Camera.main.transform.localPosition;
+
+        float elapsed = 0.0f;
+
+        while (elapsed < duration)
+        {
+            float x = Random.Range(-1f, 1f) * magnitude;
+            float y = Random.Range(-1f, 1f) * magnitude;
+
+            Camera.main.transform.localPosition = new Vector3(x, y, originalPos.z);
+
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        Camera.main.transform.localPosition = originalPos;
     }
 }

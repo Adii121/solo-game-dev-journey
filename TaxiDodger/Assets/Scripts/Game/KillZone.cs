@@ -15,7 +15,7 @@ public class KillZone : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if (other.CompareTag("PowerUp"))
+        else if (other.CompareTag("PowerUp"))
         {
             Destroy(other.gameObject);
         }
