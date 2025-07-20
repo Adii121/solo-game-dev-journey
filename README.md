@@ -32,7 +32,6 @@ Designed for Android mobile devices (portrait mode).
 <img width="300" height="300" alt="snail" src="https://github.com/user-attachments/assets/51574c0e-6ad1-4c2c-8710-2206cdb1bd4b" />
 <img width="300" height="300" alt="shield" src="https://github.com/user-attachments/assets/6f265b50-5303-4f9d-923f-038d3320cee1" />
 <img width="300" height="300" alt="Taxi" src="https://github.com/user-attachments/assets/412be31c-c8d4-494d-a2aa-2f12e2b17aec" />
----
 
 ## 🛠 Tech Stack
 - Unity 2022.3 LTS
