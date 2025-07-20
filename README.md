@@ -1,39 +1,55 @@
-# 🚖 Taxi Dodger - Unity Game
+﻿# 🚖 Taxi Dodger
 
-A fun, mobile-friendly 2D dodging game where you avoid oncoming rickshaws, collect power-ups, and manage stamina. Built in Unity with a voxel art style inspired by **Crossy Road**.
-
----
-
-## 📱 Features
-✅ **Voxel art style** for a clean aesthetic  
-✅ Dodge incoming rickshaws and survive as long as possible  
-✅ Stamina management adds challenge to movement  
-✅ Power-ups:
-- 🕑 Reduce taxi speed
-- ⚡ Infinite stamina (temporary boost)  
-✅ Main Menu, Pause Menu, and Settings Panel  
-✅ Mobile-optimized UI with portrait resolution support  
-✅ Background music and sound effects (WIP)
+A fast-paced mobile game where you dodge taxis and collect power-ups to survive as long as possible.
 
 ---
 
-## 🛠 Progress Logs
-| Day  | Highlights                                                   |
-|------|--------------------------------------------------------------|
-| 1    | Core movement, stamina bar UI, basic block spawning         |
-| 2    | Converted blocks into rickshaw obstacles, environment setup |
-| 3    | Added voxel art for player & rickshaw, collision detection   |
-| 4    | UI improvements, camera tweaks, dodge mechanics              |
-| 5    | Main menu, pause menu, Android build preparation             |
-| 6    | Power-ups (speed reduction & infinite stamina)               |
-| 7    | Pixel-perfect art pass, new score display, mobile optimizations|
-| 8    | Sounds: movement, dodge, power-ups (WIP)                     |
-| 9    | Bug fixes, collision fine-tuning, UI scaling                 |
-| 10   | Settings Panel, Master Volume, UI polish                     |
+## 🎮 Game Features
+- 🕹 **Smooth Lane-Based Movement**: Swipe or tap to dodge between lanes.
+- 💥 **Power-Ups**:
+  - 🛡 Shield: Protects you from one collision.
+  - 🌀 Slowdown: Permanently decreases taxi speed by 2f.
+  - ⚡ Infinite Stamina: Unlimited dodging for a few seconds.
+- 🌳 **Polished Pixel Art**: Beautifully crafted voxel-inspired environment.
+- 🎵 **Dynamic Sound Design**:
+  - Background music for Main Menu and Game Scene.
+  - Movement, dodge, and crash sound effects.
+  - Shield activation/deactivation sounds.
+- 🏆 **High Score System**: Displays your highest score on the main menu.
+- 🎨 **Adaptive UI**: Scales across various resolutions.
 
 ---
 
-## 🚀 Upcoming
-- 🎵 Add background music and final sound effects
-- 🎨 Polish UI scaling for multiple devices
-- 📦 Export final Android APK for testing
+## 📱 Target Platform
+Designed for Android mobile devices (portrait mode).
+
+---
+
+## 📸 Screenshots
+
+---
+
+## 🛠 Tech Stack
+- Unity 2022.3 LTS
+- C#
+- Pixel art assets designed manually
+
+---
+
+## 🚀 How to Play
+1. Tap left/right to dodge between lanes.
+2. Collect power-ups to survive longer.
+3. Avoid taxis at all costs!
+4. Achieve the highest score possible.
+
+---
+
+## 📦 Future Updates
+- 🌐 Google Play Store Release
+- 🏅 Achievements and Leaderboards
+- 🎯 More power-ups and hazards
+
+---
+
+## 👨‍💻 Developer
+Solo developer project by Aditya 🚀

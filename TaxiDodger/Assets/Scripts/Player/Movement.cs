@@ -14,6 +14,12 @@ public class Movement : MonoBehaviour
     private Vector3[] lanes;
     private AudioSource audioSource;
 
+    // Swipe detection variables
+    private Vector2 startTouchPosition;
+    private Vector2 endTouchPosition;
+    private bool isSwiping = false;
+    public float swipeThreshold = 50f; // Minimum swipe distance in pixels
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -31,19 +37,30 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        // --- Keyboard Controls (Editor/PC) ---
         if (Input.GetKeyDown(KeyCode.LeftArrow) && currentLane > 0 && playerStamina.currentStamina > 1)
         {
-            AudioSource.PlayClipAtPoint(moveSound, transform.position);
-            currentLane--;
-            transform.position = lanes[currentLane];
-            playerStamina.DrainStamina(1); // drains stamina
+            MoveLeft();
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow) && currentLane < 2 && playerStamina.currentStamina > 1)
         {
-            AudioSource.PlayClipAtPoint(moveSound, transform.position);
-            currentLane++;
-            transform.position = lanes[currentLane];
-            playerStamina.DrainStamina(1); // drains stamina
+            MoveRight();
+        }
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                startTouchPosition = touch.position;
+                isSwiping = true;
+            }
+            else if (touch.phase == TouchPhase.Ended && isSwiping)
+            {
+                endTouchPosition = touch.position;
+                DetectSwipe();
+                isSwiping = false;
+            }
         }
     }
 
@@ -103,5 +120,43 @@ public class Movement : MonoBehaviour
         }
 
         Camera.main.transform.localPosition = originalPos;
+    }
+
+    public void MoveLeft()
+    {
+        if (currentLane > 0)
+        {
+            AudioSource.PlayClipAtPoint(moveSound, transform.position);
+            currentLane--;
+            transform.position = lanes[currentLane];
+            playerStamina.DrainStamina(1); // drains stamina
+        }
+    }
+
+    public void MoveRight()
+    {
+        if (currentLane < 2)
+        {
+            AudioSource.PlayClipAtPoint(moveSound, transform.position);
+            currentLane++;
+            transform.position = lanes[currentLane];
+            playerStamina.DrainStamina(1); // drains stamina
+        }
+    }
+    void DetectSwipe()
+    {
+        Vector2 swipeDelta = endTouchPosition - startTouchPosition;
+
+        if (Mathf.Abs(swipeDelta.x) > swipeThreshold && Mathf.Abs(swipeDelta.x) > Mathf.Abs(swipeDelta.y))
+        {
+            if (swipeDelta.x < 0 && currentLane > 0 && playerStamina.currentStamina > 1)
+            {
+                MoveLeft();
+            }
+            else if (swipeDelta.x > 0 && currentLane < 2 && playerStamina.currentStamina > 1)
+            {
+                MoveRight();
+            }
+        }
     }
 }
