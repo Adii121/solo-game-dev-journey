@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\TaxiDodger\\assets\\scripts\\player\\playershield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playershield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\TaxiDodger\\assets\\scripts\\powerups\\shieldpowerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\powerups\\shieldpowerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +19,16 @@
       "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\powerups\\speedpowerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\TaxiDodger\\assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\TaxiDodger\\assets\\scripts\\powerups\\powerupmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\powerups\\powerupmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\TaxiDodger\\assets\\scripts\\player\\playershield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playershield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\TaxiDodger\\assets\\scripts\\powerups\\powerupspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\powerups\\powerupspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\TaxiDodger\\assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87AD961C-A2E6-D7F2-8392-E84077057EC8}|Assembly-CSharp.csproj|D:\\Files\\GameDev\\TaxiDodger\\assets\\scripts\\environment\\rickshawspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,25 +94,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "PlayerShield.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\Player\\PlayerShield.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerShield.cs",
               "ToolTip": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\Player\\PlayerShield.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerShield.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-19T12:19:08.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ShieldPowerUp.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\PowerUps\\ShieldPowerUp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PowerUps\\ShieldPowerUp.cs",
               "ToolTip": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\PowerUps\\ShieldPowerUp.cs",
               "RelativeToolTip": "Assets\\Scripts\\PowerUps\\ShieldPowerUp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-19T12:18:15.185Z"
             },
@@ -142,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "PowerUpMovement.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\PowerUps\\PowerUpMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PowerUps\\PowerUpMovement.cs",
@@ -154,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PowerUpSpawner.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\PowerUps\\PowerUpSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PowerUps\\PowerUpSpawner.cs",
@@ -166,13 +166,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SpeedPowerUp.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\PowerUps\\SpeedPowerUp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PowerUps\\SpeedPowerUp.cs",
               "ToolTip": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\PowerUps\\SpeedPowerUp.cs",
               "RelativeToolTip": "Assets\\Scripts\\PowerUps\\SpeedPowerUp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T06:01:12.292Z"
             },
@@ -190,13 +190,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\Game\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\GameManager.cs",
               "ToolTip": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\Game\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Game\\GameManager.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwDQAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T07:05:03.975Z"
             },
@@ -208,7 +208,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Movement.cs",
               "ToolTip": "D:\\Files\\GameDev\\TaxiDodger\\Assets\\Scripts\\Player\\Movement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Movement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAYwMQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T06:17:17.041Z",
               "EditorCaption": ""

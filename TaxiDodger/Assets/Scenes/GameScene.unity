@@ -169,7 +169,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &122776799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -250,6 +250,11 @@ MonoBehaviour:
   dodgeEffectPrefab: {fileID: 2354383813231049047, guid: 5e39a0375d0421641bcea680cf64b48d, type: 3}
   dodgeSound: {fileID: 8300000, guid: 3c88fdfb5cf800348948b6ebaa415906, type: 3}
   moveSound: {fileID: 8300000, guid: 95e48d38331942542952a997d7fc9c63, type: 3}
+  shield: {fileID: 0}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  swipeThreshold: 50
 --- !u!114 &122776802
 MonoBehaviour:
   m_ObjectHideFlags: 0

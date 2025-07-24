@@ -9,10 +9,13 @@ public class Movement : MonoBehaviour
     public GameObject dodgeEffectPrefab;
     public AudioClip dodgeSound;
     public AudioClip moveSound;
+    public PlayerShield shield;
+    BoxCollider2D playerCollider;
 
     private int currentLane = 1; // 0 = Left, 1 = Center, 2 = Right
     private Vector3[] lanes;
     private AudioSource audioSource;
+    [SerializeField] private LayerMask obstacleLayer;
 
     // Swipe detection variables
     private Vector2 startTouchPosition;
@@ -33,6 +36,10 @@ public class Movement : MonoBehaviour
         transform.position = lanes[currentLane];
 
         playerStamina = GetComponent<PlayerStamina>();
+
+        shield = GetComponent<PlayerShield>();
+
+        playerCollider = GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -68,12 +75,11 @@ public class Movement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            PlayerShield shield = GetComponent<PlayerShield>(); 
             if (shield != null && shield.IsShieldActive())
             {
                 shield.DeactivateShield(); // Consume shield
                 Debug.Log("Shield saved you!");
-                return; // Don’t trigger GameOver
+                return; // Donï¿½t trigger GameOver
             }
             PlayCrashSound();
             StartCoroutine(CameraShake(0.2f, 0.2f));
@@ -124,10 +130,19 @@ public class Movement : MonoBehaviour
 
     public void MoveLeft()
     {
-        if (currentLane > 0)
+        int targetLane = currentLane - 1;
+        if (targetLane >= 0)
         {
+            if(shield != null && shield.IsShieldActive() && IsObstacleInLane(targetLane))
+            {
+                AudioSource.PlayClipAtPoint(moveSound, transform.position);
+                PlayCrashSound();
+                StartCoroutine(CameraShake(0.2f, 0.2f));
+                shield.DeactivateShield();
+                return;
+            }
             AudioSource.PlayClipAtPoint(moveSound, transform.position);
-            currentLane--;
+            currentLane = targetLane;
             transform.position = lanes[currentLane];
             playerStamina.DrainStamina(1); // drains stamina
         }
@@ -135,10 +150,19 @@ public class Movement : MonoBehaviour
 
     public void MoveRight()
     {
-        if (currentLane < 2)
+        int targetLane = currentLane + 1;
+        if (targetLane <= 2)
         {
+            if (shield != null && shield.IsShieldActive() && IsObstacleInLane(targetLane))
+            {
+                AudioSource.PlayClipAtPoint(moveSound, transform.position);
+                PlayCrashSound();
+                StartCoroutine(CameraShake(0.2f, 0.2f));
+                shield.DeactivateShield();
+                return;
+            }
             AudioSource.PlayClipAtPoint(moveSound, transform.position);
-            currentLane++;
+            currentLane = targetLane;
             transform.position = lanes[currentLane];
             playerStamina.DrainStamina(1); // drains stamina
         }
@@ -158,5 +182,23 @@ public class Movement : MonoBehaviour
                 MoveRight();
             }
         }
+    }
+    bool IsObstacleInLane(int targetLane)
+    {
+        Vector3 checkPos = lanes[targetLane];
+
+        Vector2 boxSize = playerCollider.size;
+        Vector2 boxOffset = playerCollider.offset;
+
+        Vector2 boxCenter = new Vector2(checkPos.x, transform.position.y) + boxOffset;
+
+        Collider2D hit = Physics2D.OverlapBox(
+            boxCenter,
+            boxSize,
+            0f,
+            obstacleLayer
+        );
+
+        return hit != null && hit.CompareTag("Obstacle");
     }
 }

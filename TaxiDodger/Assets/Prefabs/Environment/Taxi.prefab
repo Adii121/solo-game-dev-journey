@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2912634119684112536}
   - component: {fileID: 2696439260971912098}
   - component: {fileID: 4805936581757171093}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Taxi
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
