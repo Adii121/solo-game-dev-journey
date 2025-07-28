@@ -13,21 +13,18 @@ public class ShieldPowerUp : MonoBehaviour
             PlayerStamina stamina = other.GetComponent<PlayerStamina>();
             PlayerShield shield = other.GetComponent<PlayerShield>();
 
-            if (stamina != null && shield != null)
+            if (stamina.currentStamina >= staminaCost)
             {
-                if (stamina.currentStamina >= staminaCost)
-                {
-                    AudioSource.PlayClipAtPoint(pickupSound, transform.position);
-                    // Deduct stamina and activate shield
-                    stamina.DrainStamina(staminaCost);
-                    shield.ActivateShield(shieldDuration);
+                AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+                // Deduct stamina and activate shield
+                stamina.DrainStamina(staminaCost);
+                shield.ActivateShield(shieldDuration);
 
-                    Destroy(gameObject); // Remove powerup
-                }
-                else
-                {
-                    Debug.Log("Not enough stamina for shield!");
-                }
+                Destroy(gameObject); // Remove powerup
+            }
+            else
+            {
+                Debug.Log("Not enough stamina for shield!");
             }
         }
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpeedPowerUp : MonoBehaviour
 {
-    public float speedDecrease = 4f;
+    public float speedDecrease = 2f;
     public float staminaCost = 6f;  // Cost to activate
     public GameObject pickupEffect;
     public AudioClip pickupSound;

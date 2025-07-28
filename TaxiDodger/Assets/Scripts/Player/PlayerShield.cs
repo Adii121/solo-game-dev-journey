@@ -8,16 +8,15 @@ public class PlayerShield : MonoBehaviour
 
     public void ActivateShield(float duration)
     {
-        if (!shieldActive)
-        {
-            shieldActive = true;
-            shieldVisual.SetActive(true); // show shield effect
-            Debug.Log("Shield activated!");
+        CancelInvoke(nameof(DeactivateShield));
 
-            if (duration > 0f)
-            {
-                Invoke(nameof(DeactivateShield), duration);
-            }
+        shieldActive = true;
+        shieldVisual.SetActive(true); // show shield effect
+        Debug.Log("Shield activated!");
+
+        if (duration > 0f)
+        {
+            Invoke(nameof(DeactivateShield), duration);
         }
     }
 
